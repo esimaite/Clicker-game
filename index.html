@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Clicker Game Template by Mike Henry <mikeshenry@gmail.com> -->
+	  <!-- Available from https://github.com/mashmac2/clicker-game-template -->
+	  <!-- You have permission to reuse this code for non-commercial purposes with attribution -->
+		<title>Clicker Game Template</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- adding jQuery, Bootstrap, and Font Awesome -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- end adding jQuery, Bootstrap, and Font Awesome -->
+	</head>
+	<body>
+		<div class="jumbotron">
+	<div class="container">
+		<div class="row" id="heading">
+			<div id="content" class="col-md-6">
+				<!--You could put status messages here -->
+				<p id="topic" class="alert alert-dark">Your didn't wrote your name!</p>
+				<p class="one alert alert-info">Click the buttons!</p>
+			</div>
+			<div id="progress-bar" class="col-md-3">
+				<!--You could put game progress here -->
+			</div>
+		</div>
+		<div class="row">
+			<div id="clicker" class="col-md-3 col-md-offset-5">
+
+				<button id="clicks" class="btn btn-primary border border-success" name="clicks" onclick="increment(clicks)"><i class="fa fa-star"></i></button>
+				<p >Total clicks: <span id="clicks-status"></span>
+				
+
+				<button id="clicks2" class="btn btn-primary" name="clicks2" onclick="incrementClicks2(clicks2)"><i class="fa fa-bomb" aria-hidden="true"></i></button>
+			    <p>Total clicks: <span id="clicks2-status"></span>
+
+				<button id="clicks3" class="btn btn-primary" name="clicks3" onclick="incrementClicks3(clicks3)"><i class="fa fa-thumbs-up"></i></button>
+			    <p>Total clicks: <span id="clicks3-status"></span>
+				
+				<button id="clicks4" class="btn btn-primary" name="clicks4" onclick="incrementClicks4(clicks4)"><i class="fa fa-heart"></i></button>
+			    <p>Total clicks: <span id="clicks4-status"></span>
+				
+				<button id="clicks5" class="btn btn-primary" name="clicks5" onclick="incrementClicks5(clicks5)"><i class="fa fa-paw"></i></button>
+			    <p>Total clicks: <span id="clicks5-status"></span>				
+			</div>
+		</div>
+		<div class="row" id="footer">
+		  <div class="col-md-6">
+		    <i class="alert alert-dark">Clicker Game Template by Mike Henry; &copy; 2019</i>
+		  </div>
+		  <div class="col-md-6">
+		    <span id="saving-status-2" class="alert alert-success">
+		       Saved
+		    </span>
+		  </div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+	</body>
+</html>
